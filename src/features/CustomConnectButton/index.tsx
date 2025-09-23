@@ -1,7 +1,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { ArtButton } from '../../shared/ui/ArtButton';
 
-import styles from '@/src/styles/home.module.scss';
+import styles from '@/styles/home.module.scss';
 
 const CustomConnectButton = () => {
   return (

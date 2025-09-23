@@ -1,6 +1,6 @@
 import { Title } from '../../shared/ui/Title';
 import { ArtMenu } from '../ArtMenu';
-import styles from '@/src/styles/home.module.scss';
+import styles from '@/styles/home.module.scss';
 import cl from 'classnames';
 
 const EarthBlock = () => {

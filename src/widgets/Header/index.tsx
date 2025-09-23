@@ -1,4 +1,4 @@
-import stylesNew from '@/src/styles/home.module.scss';
+import stylesNew from '@/styles/home.module.scss';
 import { ArtButton } from '../../shared/ui/ArtButton';
 import { Title } from '../../shared/ui/Title';
 import { Navigation } from '../Navigation';
