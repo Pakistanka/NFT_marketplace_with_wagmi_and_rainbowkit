@@ -1,10 +1,5 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-
-import stylesNew from './../../styles/home.module.scss';
+import stylesNew from '@/src/styles/home.module.scss';
 import { ArtButton } from '../../shared/ui/ArtButton';
-import HeadTags from '../../shared/ui/HeadTags';
 import { Title } from '../../shared/ui/Title';
 import { Navigation } from '../Navigation';
 import { SocialNetworks } from '../../shared/ui/SocialNetworks';
