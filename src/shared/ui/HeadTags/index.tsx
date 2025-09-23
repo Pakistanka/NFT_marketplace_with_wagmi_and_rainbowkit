@@ -1,16 +1,7 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import type { NextPage } from 'next';
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
-import stylesNew from './../styles/home.module.scss';
-import Footer from '../widgets/Footer';
-import CustomConnectButton from '../features/CustomConnectButton';
-import Header from '../widgets/Header';
-import EarthBlock from '../widgets/EarthBlock';
 
-const Home: NextPage = () => {
+const HeadTags = () => {
   return (
-    <div className={stylesNew.container}>
       <Head>
           <link
               rel="preload"
@@ -76,15 +67,7 @@ const Home: NextPage = () => {
               crossOrigin=""
           />
       </Head>
-
-      <main className={stylesNew.main}>
-        <Header />
-        <EarthBlock />
-      </main>
-
-      <Footer />
-    </div>
   );
 };
 
-export default Home;
+export default HeadTags;

@@ -1,0 +1,203 @@
+.section {
+    height: 100vh;
+    padding: 2.1429rem 6.8571rem;
+    box-sizing: border-box;
+    min-height: 600px;
+
+    &Main {
+        background: url('/bg/screen_1_bg.jpg') center no-repeat;
+        justify-content: center;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            background: linear-gradient(to top,  rgba(230,209,224,1) 0%,rgba(255,255,255,0) 100%);
+            left: 0;
+        }
+    }
+
+    &Earth {
+        background: url('/bg/screen_2_bg.jpg') center no-repeat;
+    }
+
+    &Main,
+    &Earth {
+        display: flex;
+        align-items: center;
+        padding-top: 7.1429rem;
+        padding-bottom: 7.1429rem;
+        background-size: cover;
+        flex-wrap: wrap;
+    }
+
+    &Animation {
+        min-height: 100vh;
+        height: auto;
+        position: relative;
+        padding-bottom: 2em;
+        background: linear-gradient(
+            to bottom,
+            #222331 0%,
+            #0e1217 50%,
+            #633e60 100%
+        );
+        padding-top: 50px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            z-index: 1;
+            top: -150px;
+            background: linear-gradient(to top,  rgba(34,35,49,1) 0%,rgba(64,55,69,0) 62%,rgba(82,67,81,0) 100%);
+            left: 0;
+        }
+    }
+
+    &Logos {
+        position: relative;
+        min-height: auto;
+        height: auto;
+        background: linear-gradient(
+            to bottom,
+            #633e60 0%,
+            #705451 50%,
+            #32344B 100%
+        );
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -100px;
+            z-index: 2;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(
+                to bottom,
+                rgb(50, 52, 75, 0) 0%,
+                rgb(50, 52, 75) 50%,
+                rgb(50, 52, 75, 0) 100%
+            );
+        }
+    }
+
+    &DifficultForms {
+        background: linear-gradient(
+            to bottom,
+            #32344B 0%,
+            #4B3961 50%,
+            #4D2A32 100%
+        );
+        position: relative;
+        height: auto;
+        padding-bottom: 15rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: url('/bg/screen_art_object.png') center bottom no-repeat;
+            background-size: 100% auto;
+            z-index: 1;
+            opacity: 0.7;
+        }
+    }
+
+    &Content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &AlliesGallery {
+        position: relative;
+        background: linear-gradient(
+            to bottom,
+            #35202B 0%,
+            #6F3C45 50%,
+            #58294E 100%
+        );
+        min-height: auto;
+        height: auto;
+        padding-bottom: 100px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            z-index: 1;
+            top: -150px;
+            background: linear-gradient(to top,  rgb(53, 32, 43, 1) 0%,rgb(53, 32, 43, 0) 100%);
+            left: 0;
+        }
+    }
+
+    &Footer {
+        padding-top: 80px;
+        padding-bottom: 76px;
+        height: auto;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        gap: 8vw;
+
+        .copyright {
+            text-align: right;
+        }
+    }
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 2.2857rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 2.8571rem;
+    right: 2.8571rem;
+    z-index: 9;
+}
+
+.buttonList {
+    display: flex;
+    justify-content: center;
+    gap: 1.4286rem;
+}
+
+.artTitle {
+    margin-bottom: 2em;
+}
+
+.smallTitle {
+    margin-bottom: 1em;
+}
+
+.subTitle {
+    margin-bottom: 50px !important;
+}
+
+.logoList {
+    margin-bottom: 100px;
+}
+
+.superStar {
+    padding: 0 18px 0 11px;
+    position: relative;
+    top: 4px;
+}
+
+.superEye {
+    padding: 0 15px 0 10px;
+}
+
