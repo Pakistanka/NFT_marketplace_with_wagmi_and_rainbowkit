@@ -1,14 +1,13 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
-import stylesNew from '@/styles/home.module.scss';
 import Footer from '../widgets/Footer';
-import CustomConnectButton from '../features/CustomConnectButton';
 import Header from '../widgets/Header';
-import EarthBlock from '../widgets/EarthBlock';
+import FirstLayout from '@/widgets/MintBlock';
+import cl from 'classnames';
+import stylesNew from '@/styles/home.module.scss';
 
 const Home: NextPage = () => {
+
   return (
     <div className={stylesNew.container}>
       <Head>
@@ -77,9 +76,9 @@ const Home: NextPage = () => {
           />
       </Head>
 
-      <main className={stylesNew.main}>
+      <main className={cl(stylesNew.section, stylesNew.sectionMain, stylesNew.main)}>
         <Header />
-        <EarthBlock />
+        <FirstLayout />
       </main>
 
       <Footer />

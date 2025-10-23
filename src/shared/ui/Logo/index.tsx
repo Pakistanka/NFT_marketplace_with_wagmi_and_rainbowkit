@@ -8,7 +8,7 @@ interface LogoProps {}
 export const Logo: React.FC<LogoProps> = ({}) => {
     return (
         <h1 className={styles.logo}>
-            <Link href="/">Dusktopia</Link>
+            <Link href="/">NFT Minting</Link>
         </h1>
     );
 }

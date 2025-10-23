@@ -2,24 +2,35 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { ArtButton } from '../../shared/ui/ArtButton';
 
 import styles from '@/styles/home.module.scss';
+import { useDisconnect } from 'wagmi';
 
 const CustomConnectButton = () => {
+  const { disconnect } = useDisconnect();
+
   return (
     <ConnectButton.Custom>
-      {({ account, chain, openConnectModal, openAccountModal, mounted }) => {
+      {({ account, openConnectModal, mounted }) => {
+
         if (!mounted) return null;
 
         const handleClick = () => {
           if (account) {
-            openAccountModal();
+            disconnect();
           } else {
             openConnectModal();
           }
         };
 
+        const buttonText = account
+          ? account.displayName || 'Connected'
+          : 'Connect Wallet';
+
         return (
-          <ArtButton onClick={handleClick} className={styles.myCustomButton}>
-            {account ? account.displayName || 'Connected' : 'Connect Wallet'}
+          <ArtButton
+            onClick={handleClick}
+            className={styles.myCustomButton}
+          >
+            {buttonText}
           </ArtButton>
         );
       }}

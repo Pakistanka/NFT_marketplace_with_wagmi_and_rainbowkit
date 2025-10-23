@@ -117,4 +117,27 @@ $size-border: 2px;
         border-left: 10px solid transparent;
         transition: all 0.3s;
     }
+
+    &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      background: #aaa;
+    }
+
+    .artButtonText {
+      color: #ccc;
+    }
+
+    .artButtonAngleLeft {
+      border-top-color: #ccc;
+    }
+
+    .artButtonAngleRight {
+      border-bottom-color: #ccc;
+    }
+  }
 }
